@@ -8,8 +8,8 @@
 
 body{
    margin: 0px;
-   padding: 0px;
-   font-size: 16px;
+/*    padding: 0px;
+   font-size: 16px; */
    background-color: #ebebeb;
 }
 
@@ -32,15 +32,13 @@ nav > ul > li {
     font-family: "Montserrat semi bold";
     letter-spacing: .03em;
     display: inline-block;
-    min-width: 50px;
+    /* min-width: 50px; */
 }
 
 /* Le titre prend l'espace restant après le placement des liens sur les côtés */
 nav > ul > li.fill {
     flex-grow: 1;
 }
-
-/* animation surligne texte */
 
 nav > ul > li > a {
     font-size: .6em;
@@ -63,6 +61,8 @@ nav > ul > li > a.nav-title {
     /* hack */
     margin-bottom: 15px;
 }
+
+/* animation surligne texte */
 
 nav > ul > li > a.underline:after {
     content: '';
