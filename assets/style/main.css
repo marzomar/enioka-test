@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Montserrat semi bold";
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf')
+}
+
+/* rouge por betinna #e94d3d */
+/* gris pour font #ebebeb */
+
+body{
+   margin: 0px;
+   padding: 0px;
+   font-size: 16px;
+   background-color: #ebebeb;
+}
+
+nav {
+    margin: 15%;
+    margin-top: 0px;
+    background-color: white;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* reset */
+    margin: 0; 
+    padding: 0;
+}
+
+nav > ul > li {
+    font-family: "Montserrat semi bold";
+    letter-spacing: .03em;
+    display: inline-block;
+    min-width: 50px;
+}
+
+/* Le titre prend l'espace restant après le placement des liens sur les côtés */
+nav > ul > li.fill {
+    flex-grow: 1;
+}
+
+/* animation surligne texte */
+
+nav > ul > li > a {
+    font-size: .6em;
+    display: block;
+    text-decoration:none;
+    padding: 10px;
+    text-align: center;
+    color: #444444;
+    text-transform: uppercase;
+}
+
+/* nav title */
+nav > ul > li > a.nav-title {
+    padding: 10px 20px;
+    letter-spacing: .05em;
+    font-size: 1em;
+    margin: auto;
+    color: #e94d3d;
+
+    /* hack */
+    margin-bottom: 15px;
+}
+
+nav > ul > li > a.underline:after {
+    content: '';
+    display: block;
+    margin: 5px auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+nav > ul > li > a.underline:hover:after {
+    width: 100%;
+    background:#e94d3d;
+}
+
